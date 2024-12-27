@@ -15,14 +15,58 @@
     <style>
         body {
             background-color: #ffffff;
-            background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f0f0f0' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239633f1' fill-opacity='0.08'%3E%3Cpath d='M50 0l10 10-10 10-10-10L50 0zm0 20l10 10-10 10-10-10L50 20zm20 0l10 10-10 10-10-10L70 20zM30 20l10 10-10 10-10-10L30 20zm20 20l10 10-10 10-10-10L50 40zm20 0l10 10-10 10-10-10L70 40zM30 40l10 10-10 10-10-10L30 40z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            animation: floatingBackground 30s ease-in-out infinite;
+            background-size: 400px 400px;
+        }
+
+        @keyframes floatingBackground {
+            0% {
+                background-position: 0% 0%;
+            }
+
+            25% {
+                background-position: 50% 25%;
+            }
+
+            50% {
+                background-position: 25% 50%;
+            }
+
+            75% {
+                background-position: 75% 75%;
+            }
+
+            100% {
+                background-position: 0% 0%;
+            }
         }
 
         .largescreen {
-            background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f0f0f0' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239633f1' fill-opacity='0.06'%3E%3Cpath d='M10 10h10v10H10V10zm30 0h10v10H40V10zm30 0h10v10H70V10zM10 40h10v10H10V40zm30 0h10v10H40V40zm30 0h10v10H70V40zM10 70h10v10H10V70zm30 0h10v10H40V70zm30 0h10v10H70V70zm-15-15h10v10H55V55z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            animation: gentleFloat 45s ease-in-out infinite;
+            background-size: 500px 500px;
+        }
+
+        @keyframes gentleFloat {
+            0% {
+                background-position: 0% 0%;
+            }
+
+            33% {
+                background-position: 25% 25%;
+            }
+
+            66% {
+                background-position: 75% 50%;
+            }
+
+            100% {
+                background-position: 0% 0%;
+            }
         }
     </style>
-    <title>sapif</title>
+    <title>Sapif</title>
 </head>
 
 <body>
